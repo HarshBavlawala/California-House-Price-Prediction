@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <header class="header">
+        <h2>California House Price Prediction</h2>
+        <p class="subtitle">Real Estate Valuation Model</p>
+    </header>
+
+    <form id="predictForm">
+        <div class="grid">
+            <div class="form-group">
+                <label>Longitude</label>
+                <input type="number" step="any" id="longitude" value="-122.23" required>
+            </div>
+            <div class="form-group">
+                <label>Latitude</label>
+                <input type="number" step="any" id="latitude" value="37.88" required>
+            </div>
+            <div class="form-group">
+                <label>House Median Age</label>
+                <input type="number" step="any" id="housing_median_age" value="41" required>
+            </div>
+            <div class="form-group">
+                <label>Median Income</label>
+                <input type="number" step="any" id="median_income" value="8.3252" required>
+            </div>
+            <div class="form-group">
+                <label>Total Rooms</label>
+                <input type="number" step="any" id="total_rooms" value="880" required>
+            </div>
+            <div class="form-group">
+                <label>Total Bedrooms</label>
+                <input type="number" step="any" id="total_bedrooms" value="129" required>
+            </div>
+            <div class="form-group">
+                <label>Population</label>
+                <input type="number" step="any" id="population" value="322" required>
+            </div>
+            <div class="form-group">
+                <label>Households</label>
+                <input type="number" step="any" id="households" value="126" required>
+            </div>
+            <div class="form-group full-width">
+                <label>Ocean Proximity</label>
+                <select id="ocean_proximity">
+                    <option value="NEAR BAY">NEAR BAY</option>
+                    <option value="<1H OCEAN">&lt;1H OCEAN</option>
+                    <option value="INLAND">INLAND</option>
+                    <option value="NEAR OCEAN">NEAR OCEAN</option>
+                    <option value="ISLAND">ISLAND</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Predict House Price</button>
+    </form>
+
+    <div id="result"></div>
+
+    <footer class="footer">
+        Developed by <strong>Harsh Bavlawala</strong>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
